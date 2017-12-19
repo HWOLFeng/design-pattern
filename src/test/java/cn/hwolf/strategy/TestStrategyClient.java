@@ -25,7 +25,7 @@ public class TestStrategyClient {
         Price price = new Price(advancedMemberStrategy);
         Price price1 = new Price(intermediateMemberStrategy);
         Price price2 = new Price(primaryMemberStrategy);
-        // 测试
+        // 测试数据
         Assert.assertTrue(price.contextStrategy(bookPrice) == 50.0);
         Assert.assertTrue(price1.contextStrategy(bookPrice) == 80.0);
         Assert.assertTrue(price2.contextStrategy(bookPrice) == 100.0);
