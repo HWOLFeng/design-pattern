@@ -1,4 +1,6 @@
-package cn.hwolf.observer;
+package cn.hwolf.observer.impl;
+
+import cn.hwolf.observer.Subject;
 
 /**
  * 实现类，被观察者，状态会发生改变

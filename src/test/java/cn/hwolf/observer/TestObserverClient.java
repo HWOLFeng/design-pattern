@@ -1,5 +1,7 @@
 package cn.hwolf.observer;
 
+import cn.hwolf.observer.impl.ObserverImpl;
+import cn.hwolf.observer.impl.SubjectImpl;
 import org.junit.Test;
 
 /**

@@ -1,4 +1,7 @@
-package cn.hwolf.observer;
+package cn.hwolf.observer.impl;
+
+import cn.hwolf.observer.Observer;
+import cn.hwolf.observer.Subject;
 
 /**
  * @author hwolf
