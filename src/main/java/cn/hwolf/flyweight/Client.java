@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class Client {
     public static void main(String[] args) {
-        List<Character> compositeState = new ArrayList<Character>();
+        List<Character> compositeState = new ArrayList<>();
         compositeState.add('a');
         compositeState.add('b');
         compositeState.add('c');
