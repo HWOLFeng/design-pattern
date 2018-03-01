@@ -14,6 +14,7 @@ public class ObserverImpl implements Observer {
      */
     private String subjectState;
 
+
     @Override
     public void update(String state) {
         setSubjectState(state);
