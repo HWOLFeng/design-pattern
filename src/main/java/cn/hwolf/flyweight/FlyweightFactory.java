@@ -37,13 +37,9 @@ public class FlyweightFactory {
      * @return
      */
     public Flyweight factory(Character character) {
-        Flyweight flyweight = flyweightMap.get(character);
-        if (flyweight == null){
-            //如果对象不存在则创建一个新的Flyweight对象
-            flyweight = new ConcreteFlyweight(character);
-            //把这个新的Flyweight对象添加到缓存中
-            flyweightMap.put(character,flyweight);
-        }
+        //如果对象不存在则创建一个新的Flyweight对象，把这个新的Flyweight对象添加到缓存中
+        Flyweight flyweight = flyweightMap.containsKey(character) ? flyweightMap.get(character) : new ConcreteFlyweight(character);
+        flyweightMap.putIfAbsent(character,flyweight);
         return flyweight;
     }
 }

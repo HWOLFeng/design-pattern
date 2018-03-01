@@ -24,11 +24,11 @@ public class ConcreteCompositeFlyweight implements Flyweight{
 
     @Override
     public void operation(String state) {
-        Flyweight fly = null;
+        Flyweight flyweight;
         // 遍历Map
         for(Object o : flyweightMap.keySet()){
-            fly = flyweightMap.get(o);
-            fly.operation(state);
+            flyweight = flyweightMap.get(o);
+            flyweight.operation(state);
         }
     }
 }
